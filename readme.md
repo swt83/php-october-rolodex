@@ -15,12 +15,15 @@ $ git submodule add git@github.com:swt83/php-october-team.git plugins/travis/tea
 Build a partial for use in your pages:
 
 ```
+==
+<?php
 use Travis\Team\Models\Member;
 
 function onStart()
 {
     $this['members'] = Member::orderBy('role', 'asc')->get();
 }
+?>
 ==
 <aside id="members">
     {% for member in members %}
