@@ -1,0 +1,22 @@
+plugin:
+    name: 'travis.team::lang.plugin.name'
+    description: 'travis.team::lang.plugin.description'
+    author: 'Scott Travis'
+    icon: oc-icon-users
+    homepage: ''
+navigation:
+    team:
+        label: 'travis.team::lang.plugin.name'
+        url: travis/team/members
+        icon: icon-users
+        permissions:
+            - travis.team.manage_team
+        sideMenu:
+            members:
+                label: Members
+                url: travis/team/members
+                icon: icon-users
+permissions:
+    travis.team.manage_team:
+        tab: 'travis.team::lang.plugin.name'
+        label: 'Manage Teams'

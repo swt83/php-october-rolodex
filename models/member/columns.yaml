@@ -1,0 +1,25 @@
+columns:
+    first:
+        label: First
+        type: text
+        searchable: true
+        sortable: true
+    last:
+        label: Last
+        type: text
+        searchable: true
+        sortable: true
+    role:
+        label: Role
+        type: text
+        searchable: true
+        sortable: true
+    email:
+        label: Email
+        type: text
+    phone_office:
+        label: Office
+        type: text
+    phone_mobile:
+        label: Mobile
+        type: text

@@ -1,0 +1,50 @@
+fields:
+    first:
+        label: First
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    last:
+        label: Last
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    role:
+        label: Role
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    email:
+        label: Email
+        oc.commentPosition: ''
+        span: auto
+        required: 0
+        type: text
+    phone_office:
+        label: 'Phone Office'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    phone_mobile:
+        label: 'Phone Mobile'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    bio:
+        label: Bio
+        size: ''
+        oc.commentPosition: ''
+        span: full
+        type: textarea
+    avatar:
+        label: Avatar
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
