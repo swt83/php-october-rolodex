@@ -1,25 +1,25 @@
 # Team for October
 
-Add a list of team members to your website.
+Add a list of team members to your website, including custom avatars.
 
 ## Install
 
 Add as a submodule to your project:
 
 ```bash
-$ git submodule add git@github.com:swt83/php-october-team.git plugs/travis/team
+$ git submodule add git@github.com:swt83/php-october-team.git plugins/travis/team
 ```
 
 ## Usage
 
-Build a partial for use on a page:
+Build a partial for use in your pages:
 
 ```
 use Travis\Team\Models\Member;
 
 function onStart()
 {
-  $this['members'] = Member::orderBy('role', 'asc')->get();
+    $this['members'] = Member::orderBy('role', 'asc')->get();
 }
 ==
 <aside id="members">
@@ -42,3 +42,7 @@ function onStart()
     {% endfor %}
 </aside>
 ```
+
+The advantage to building your own partials, instead of using a pre-made component, is that you can fully customize your use of the data.
+
+If you wish to make changes to the data fields, or anything else, simply use the [Builder](http://octobercms.com/plugin/rainlab-builder) plugin to make your modifications.
