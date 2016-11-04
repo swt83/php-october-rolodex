@@ -25,7 +25,7 @@ function onStart()
 }
 ?>
 ==
-<aside id="members">
+<div id="members">
     {% for member in members %}
         <div class="member">
             <div class="photo"><img src="{{ member.avatar.path }}" alt="" /></div>
@@ -43,7 +43,7 @@ function onStart()
             </small>
         </div>
     {% endfor %}
-</aside>
+</div>
 ```
 
 The advantage to building your own partials, instead of using a pre-made component, is that you can fully customize your use of the data.
