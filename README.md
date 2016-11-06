@@ -21,7 +21,11 @@ use Travis\Rolodex\Models\Contact;
 
 function onStart()
 {
-    $this['contacts'] = Contact::orderBy('role', 'asc')->get();
+    // cache forever
+    $this['contacts'] = Cache::rememberForever('contacts', function()
+    {
+        return Contact::orderBy('sort_order', 'asc')->get()->toArray(); // must have toArray() or cache will fail
+    });
 }
 ?>
 ==
