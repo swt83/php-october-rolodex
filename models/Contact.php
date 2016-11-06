@@ -9,7 +9,6 @@ class Contact extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\Sortable; // add to allow sortable trait
-    #const SORT_ORDER = 'order_id';
 
     /*
      * Validation
