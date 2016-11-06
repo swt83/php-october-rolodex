@@ -47,5 +47,3 @@ function onStart()
 ```
 
 The advantage to building your own partials, instead of using a pre-made component, is that you can fully customize your use of the data.
-
-If you wish to make changes to the data fields, or anything else, simply use the [Builder](http://octobercms.com/plugin/rainlab-builder) plugin to make your modifications.

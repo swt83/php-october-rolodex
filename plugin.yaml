@@ -3,19 +3,20 @@ plugin:
     description: 'travis.team::lang.plugin.description'
     author: 'Scott Travis'
     icon: oc-icon-users
-    homepage: ''
+    homepage: 'https://github.com/swt83/php-october-team'
 navigation:
     team:
         label: 'travis.team::lang.plugin.name'
         url: travis/team/members
         icon: icon-users
+        iconSvg: 'plugins/travis/team/assets/img/icon.png'
         permissions:
             - travis.team.manage_team
         sideMenu:
             members:
                 label: Members
                 url: travis/team/members
-                icon: icon-users
+                icon: icon-list
 permissions:
     travis.team.manage_team:
         tab: 'travis.team::lang.plugin.name'
