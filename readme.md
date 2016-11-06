@@ -45,5 +45,3 @@ function onStart()
     {% endfor %}
 </div>
 ```
-
-The advantage to building your own partials, instead of using a pre-made component, is that you can fully customize the use of your data.
