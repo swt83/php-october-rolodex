@@ -24,7 +24,27 @@ function onStart()
     // cache forever
     $this['contacts'] = Cache::rememberForever('contacts', function()
     {
-        return Contact::orderBy('sort_order', 'asc')->get()->toArray(); // must have toArray() or cache will fail
+        // load
+        $records = Contact::orderBy('sort_order', 'asc')->get();
+
+        // init
+        $clean = [];
+
+        // foreach record...
+        foreach ($records as $record)
+        {
+            // convert to array
+            $array = $record->toArray();
+
+            // capture avatar path
+            $array['avatar'] = is_object($record->avatar) ? $record->avatar->path : null;
+
+            // save
+            $clean[] = $array;
+        }
+
+        // return
+        return $clean;
     });
 }
 ?>
