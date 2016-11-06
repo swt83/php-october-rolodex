@@ -1,13 +1,13 @@
-# Team for October
+# Rolodex for October
 
-Add a list of team members to your website, including custom avatars.
+Add a list of contacts to your website, including custom avatars.
 
 ## Install
 
 Add as a submodule to your project:
 
 ```bash
-$ git submodule add git@github.com:swt83/php-october-team.git plugins/travis/team
+$ git submodule add git@github.com:swt83/php-october-rolodex.git plugins/travis/rolodex
 ```
 
 ## Usage
@@ -17,28 +17,28 @@ Build a partial for use in your pages:
 ```
 ==
 <?php
-use Travis\Team\Models\Member;
+use Travis\Rolodex\Models\Contact;
 
 function onStart()
 {
-    $this['members'] = Member::orderBy('role', 'asc')->get();
+    $this['contacts'] = Contact::orderBy('role', 'asc')->get();
 }
 ?>
 ==
-<div id="members">
-    {% for member in members %}
-        <div class="member">
-            <div class="photo"><img src="{{ member.avatar.path }}" alt="" /></div>
-            <h1>{{ member.first }} {{ member.last }}</h1>
-            <h2>{{ member.role }}</h2>
+<div id="contacts">
+    {% for contact in contacts %}
+        <div class="contact">
+            <div class="photo"><img src="{{ contact.avatar.path }}" alt="" /></div>
+            <h1>{{ contact.first }} {{ contact.last }}</h1>
+            <h2>{{ contact.role }}</h2>
             <div class="clear"></div>
-            <p>{{ member.bio }}</p>
+            <p>{{ contact.bio }}</p>
             <small>
-                {% if member.phone_office %}
-                    {{ member.phone_office }} Office<br/>
+                {% if contact.phone_office %}
+                    {{ contact.phone_office }} Office<br/>
                 {% endif %}
-                {% if member.phone_mobile %}
-                    {{ member.phone_mobile }} Mobile
+                {% if contact.phone_mobile %}
+                    {{ contact.phone_mobile }} Mobile
                 {% endif %}
             </small>
         </div>
@@ -46,4 +46,4 @@ function onStart()
 </div>
 ```
 
-The advantage to building your own partials, instead of using a pre-made component, is that you can fully customize your use of the data.
+The advantage to building your own partials, instead of using a pre-made component, is that you can fully customize the use of your data.

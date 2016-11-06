@@ -1,0 +1,11 @@
+name: Contacts
+modelClass: Travis\Rolodex\Models\Contact
+form: $/travis/rolodex/models/contact/fields.yaml
+defaultRedirect: travis/rolodex/contacts
+create:
+    redirect: 'travis/rolodex/contacts/update/:id'
+    redirectClose: travis/rolodex/contacts
+update:
+    redirect: travis/rolodex/contacts
+    redirectClose: travis/rolodex/contacts
+preview: {  }

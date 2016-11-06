@@ -1,26 +1,11 @@
 1.0.1:
     - 'Initialize plugin.'
 1.0.2:
-    - 'Created table travis_team_members'
-    - builder_table_create_travis_team_members.php
+    - 'Created table travis_rolodex_contacts'
+    - builder_table_create_travis_rolodex_contacts.php
 1.0.3:
-    - 'Updated table travis_team_members'
-    - builder_table_update_travis_team_members.php
+    - 'Updated table travis_rolodex_contacts'
+    - builder_table_update_travis_rolodex_contacts.php
 1.0.4:
-    - 'Updated table travis_team_members'
-    - builder_table_update_travis_team_members_2.php
-1.0.5:
-    - 'Updated table travis_team_members'
-    - builder_table_update_travis_team_members_3.php
-1.0.6:
-    - 'Updated table travis_team_members'
-    - builder_table_update_travis_team_members_4.php
-1.0.7:
-    - 'Updated table travis_team_members'
-    - builder_table_update_travis_team_members_5.php
-1.0.8:
-    - 'Updated table travis_team_members'
-    - builder_table_update_travis_team_members_6.php
-1.0.9:
-    - 'Updated table travis_team_members'
-    - builder_table_update_travis_team_members_7.php
+    - 'Updated table travis_rolodex_contacts'
+    - builder_table_update_travis_rolodex_contacts_2.php

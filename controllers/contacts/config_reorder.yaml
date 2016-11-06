@@ -1,0 +1,5 @@
+title: Contacts
+modelClass: Travis\Rolodex\Models\Contact
+nameFrom: last
+toolbar:
+    buttons: reorder_toolbar

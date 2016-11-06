@@ -1,4 +1,4 @@
-<?php namespace Travis\Team;
+<?php namespace Travis\Rolodex;
 
 use System\Classes\PluginBase;
 

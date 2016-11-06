@@ -1,13 +1,15 @@
-<?php namespace Travis\Team\Models;
+<?php namespace Travis\Rolodex\Models;
 
 use Model;
 
 /**
  * Model
  */
-class Member extends Model
+class Contact extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+    use \October\Rain\Database\Traits\Sortable; // add to allow sortable trait
+    #const SORT_ORDER = 'order_id';
 
     /*
      * Validation
@@ -24,7 +26,7 @@ class Member extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'travis_team_members';
+    public $table = 'travis_rolodex_contacts';
 
     /**
      * @var array Attach Many relation

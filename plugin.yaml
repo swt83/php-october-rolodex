@@ -1,23 +1,23 @@
 plugin:
-    name: 'travis.team::lang.plugin.name'
-    description: 'travis.team::lang.plugin.description'
+    name: 'travis.rolodex::lang.plugin.name'
+    description: 'travis.rolodex::lang.plugin.description'
     author: 'Scott Travis'
     icon: oc-icon-users
-    homepage: 'https://github.com/swt83/php-october-team'
+    homepage: 'https://github.com/swt83/php-october-rolodex'
 navigation:
-    team:
-        label: 'travis.team::lang.plugin.name'
-        url: travis/team/members
-        icon: icon-users
-        iconSvg: 'plugins/travis/team/assets/img/icon.png'
+    rolodex:
+        label: 'travis.rolodex::lang.plugin.name'
+        url: travis/rolodex/contacts
+        icon: oc-icon-users
+        iconSvg: 'plugins/travis/rolodex/assets/img/icon.png'
         permissions:
-            - travis.team.manage_team
+            - travis.rolodex.manage_rolodex
         sideMenu:
-            members:
-                label: Members
-                url: travis/team/members
+            contacts:
+                label: Contacts
+                url: travis/rolodex/contacts
                 icon: icon-list
 permissions:
-    travis.team.manage_team:
-        tab: 'travis.team::lang.plugin.name'
-        label: 'Manage Teams'
+    travis.rolodex.manage_rolodex:
+        tab: 'travis.rolodex::lang.plugin.name'
+        label: 'Manage Rolodex'

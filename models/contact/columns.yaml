@@ -1,4 +1,8 @@
 columns:
+    sort_order:
+        label: Order
+        type: number
+        sortable: true
     first:
         label: First
         type: text
@@ -17,6 +21,7 @@ columns:
     email:
         label: Email
         type: text
+        searchable: true
     phone_office:
         label: Office
         type: text

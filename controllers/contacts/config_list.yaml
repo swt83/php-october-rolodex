@@ -1,7 +1,7 @@
-title: Members
-modelClass: Travis\Team\Models\Member
-list: $/travis/team/models/member/columns.yaml
-recordUrl: 'travis/team/members/update/:id'
+title: Contacts
+modelClass: Travis\Rolodex\Models\Contact
+list: $/travis/rolodex/models/contact/columns.yaml
+recordUrl: 'travis/rolodex/contacts/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true
