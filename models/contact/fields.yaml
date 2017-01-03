@@ -34,10 +34,11 @@ fields:
         type: text
     bio:
         label: Bio
-        size: ''
+        size: huge
         oc.commentPosition: ''
+        mode: tab
         span: full
-        type: textarea
+        type: markdown
     avatar:
         label: Avatar
         oc.commentPosition: ''
