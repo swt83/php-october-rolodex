@@ -32,6 +32,21 @@ fields:
         oc.commentPosition: ''
         span: auto
         type: text
+    social_facebook:
+        label: Facebook
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    social_twitter:
+        label: Twitter
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    social_website:
+        label: Website
+        oc.commentPosition: ''
+        span: auto
+        type: text
     bio:
         label: Bio
         size: huge
